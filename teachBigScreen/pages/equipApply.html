@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+</head>
+<link rel="stylesheet" href="../styles/common.css">
+<link rel="stylesheet" href="../styles/equipApply.css">
+<body>
+    <div id="root">
+        <header>
+            <div class="date">
+                <div class="currentTime"></div>
+                <div class="cDate">
+                    <div class="currentDate"></div>
+                    <!-- <div class="currentWeek"></div> -->
+                </div>
+            </div>
+            <!-- <div class="site">
+                <span class="iconfont">&#xe70c;</span>
+                <span class="city">中国</span>
+            </div> -->
+        </header>
+        <div class="main">
+            <div class="left">
+                <!-- 科学使用时长 -->
+                <div class="serviceTime">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">进出口食物占比</span>
+                    </p>
+                    <div id="serviceTimeChart"></div>
+                </div>
+                <!-- 各种类进口量变化 -->
+                <div class="gradeRate">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">各种类进口量变化</span>
+                    </p>
+                    <div id="gradeRateChart"></div>
+                </div>
+                <!-- Beverages排行榜 -->
+                <div class="faultCondition">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">Beverages进口价值排行榜</span>
+                    </p>
+                    <table class="faultConditionTable">
+                        <tr>
+                            <th>序列</th>
+                            <th class="company">国家</th>
+                            <th>进口值</th>
+                            <th>所占比例</th>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Mexico</td>
+                            <td>5624.1</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Italy</td>
+                            <td>2913.1</td>
+                            <td>16%</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>France</td>
+                            <td>2651.1</td>
+                            <td>14%</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Austria</td>
+                            <td>918.1</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>05</td>
+                            <td>Netherlands</td>
+                            <td>854.6</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>Switzerland</td>
+                            <td>693.4</td>
+                            <td>3%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="middle">
+                <!-- 中国地图 -->
+                <div class="map">
+                    <div id="mapChart"></div>
+                    
+                </div>
+                <!-- 各行政区故障情况分析 -->
+                <div class="situationAnalysis">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">美国2000-2021年进出口食物百分比变化折线图</span>
+                    </p>
+                    <div id="situationAnalysisChart"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rate">
+    <section class="tabBox">
+        <ul class="tab">
+            <li class="active">2010</li>
+            <li>2014</li>
+            <li>2018</li>
+            <li>2021</li>
+        </ul>
+        
+        <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+        <script src="../js/yuanpan.js"></script>
+        
+        <div class="content active">
+          <div id="container" style="height: 100%"></div>
+          <script src="../js/yuanpan1.js"></script>
+        </div>
+
+        <div class="content">
+          <img src="../imgs/a2.png">
+        </div>
+
+        <div class="content">
+          <img src="../imgs/a3.png">
+        </div>
+        <div class="content">
+          <img src="../imgs/a4.png">
+      </div>
+    </section>
+    <script src="../js/swap.js"></script>
+                </div>
+                <!-- 蔬菜进口价值 -->
+                <div class="distributeByStatus">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">蔬菜进口价值</span>
+                    </p>
+                    <div id="distributeByStatusChart"></div>
+                </div>
+
+                <!-- 金字塔 -->
+                <div class="distributeByServer">
+                    <p class="module">
+                        <span class="iconfont">&#xe73e;</span>
+                        <span class="title">美国食物金字塔</span>
+                    </p>
+                    <div id="distributeByServerChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../libs/jquery-2.1.0.js"></script>
+<script src="../libs/echarts.min.js"></script>
+<script src="../libs/world.js"></script>
+<script src="../libs/utils.js"></script>
+<script src="../js/equipApply.js"></script>
+</html>
